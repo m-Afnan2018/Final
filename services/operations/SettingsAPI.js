@@ -30,6 +30,7 @@ export function updateDisplayPicture(token, formData) {
         response
       )
 
+      
       if (!response.data.success) {
         throw new Error(response.data.message)
       }
