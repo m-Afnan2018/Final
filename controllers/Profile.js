@@ -16,6 +16,7 @@ exports.updateProfile = async (req, res) => {
 		profile.about = about;
 		profile.contactNumber = contactNumber;
 		profile.gender = gender;
+		
 
 		// Save the updated profile
 		await profile.save(); // yha object bna pda he Auth.js me isliye .save() use kiya varna .create() use krna he
